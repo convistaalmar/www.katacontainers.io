@@ -28,8 +28,8 @@
                                         <li class='nav-item {% add_active request page.page.slug %}'>
                                             <a class="nav-link" href="{{ page.page.get_absolute_url }}">{{ page.display_name }}</a>
                                         {% else %}
-                                        <li>
-                                            <a href="{{ page.url }}">{{ page.display_name }}</a>
+                                        <li class='nav-item'>
+                                            <a class="nav-link" href="{{ page.url }}">{{ page.display_name }}</a>
                                         {% endif %}
                                     </li>
                                 {% endif %}
